@@ -11,11 +11,10 @@ body {
     background: linear-gradient(to left, #D38312,#A83279) ;
 } 
 nav {
-    background: red;
+    background: #ffb6b9;
     height: 4rem;
     justify-content: center;
     align-items: center;
-    background: #fff;
     box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
 }
 .nav-center {
