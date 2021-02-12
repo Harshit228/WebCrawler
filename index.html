@@ -1,44 +1,61 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mast Crawler</title>
+    <title>Spida-Coders.web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <div class="nav-center">
-            <h1>Web Crawler</h1>
+            <img src="Logo.jpg" alt="" class="Logo">
+            <h1 class="nav_heading">Spida-Coders</h1>
         </div>
     </nav>
     <main>
+    <br>
+    <br>
         <div class="descAndInp">
             <div class="description">
-                <p>Enter Product Name</p>
+                <p><b> Enter Product Name </b></p>
             </div>
-            <div>
-            <input type="text" placeholder="Product Name" class="inputText">
-            </div>
+            <form method="POST">
+                <input class ="Prod_input" type="text" placeholder="Product Name"  name="search" autocomplete="off">
+            </form>
         </div>
         <div class="btn-container">
-            <button class="btn btn-hero" id="btn">Submit</button>       
+            <button class="btn btn-hero" id="btn">Submit</button>
         </div>
-            <div class="output">
-        <h2>You can see the result here</h2>
-        <div class="output_heading">
-            <div class="p_name">
-                    <h3>HELLO</h3>
+        <div class="Prod_filter_output">
+        <div class="Filters">
+            <div class="Filter_price">Price</div>
+            <div class="FilterP_itbmin"><input type="minimum" placeholder="Minimum Price"  class="tb1"></div>
+            <div class="FilterP_itbmax"><input type="maximum" placeholder="Maximum Price"  class="tb2"></div>
+            <div class="Fsort_asc">
+                <div class="FilterP_cba"> <input type="checkbox"></div>
+                <div class="FilterP_la"><label for="">Sort Ascending</label></div>
             </div>
-            <div class="P_price">
-                    <h3>Price</h3> 
+            <div class="Fsort_dsc">
+                <div class="FilterP_cbd"><input type="checkbox"></div>
+                <div class="FilterP_ld"><label for="">Sort Descending</label></div>
             </div>
-            <div class="P_link">
-                <h3>LINK</h3>
+        </div>
+        <div class="Prod_output">
+            <div class="Prod_display">
+                <div class="Prod_photo">
+                    <img src="{{}}" alt="" class="Prod_photosize">
+                </div>
+                <div class="Prod_details">
+                    <div class="Prod_name"><p></p></div>
+                    <div class="Prod_price"><p></p></div>
+                    <div class="Prod_link"></div>
+                </div>
             </div>
+        </div>
         </div>
     </div>
     </main>
-    
 </body>
 </html>
